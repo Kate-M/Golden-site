@@ -1,0 +1,93 @@
+#alertbox_footer {
+	position: fixed;
+	width: 100%;
+	z-index: 999999;
+	max-height: auto;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	font-family: "futura_md_btmedium", sans-serif;
+  display: none;
+}
+
+#alertbox_footer p {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: "futura_md_btmedium", sans-serif;
+}
+
+#alertbox_footer.alertbox-red p,
+#alertbox_footer.alertbox-black p {
+	color: #fff;
+}
+
+#alertbox_footer.alertbox-black{
+	background-color: #231f20;
+}
+
+#alertbox_footer.alertbox-red{
+	background-color: #EB1C23;
+	color: #ffffff;
+}
+
+#alertbox_footer.alertbox-yellow{
+	background-color: #D4C528;
+}
+
+#alertbox_footer.alertbox-yellow p {
+	color: #231f20;
+}
+
+#alertbox_footer.alertbox-red #alertbox_date,
+#alertbox_footer.alertbox-black #alertbox_date {
+	color: #fff;
+}
+
+
+#alertbox_footer.alertbox-yellow #alertbox_date {
+ color: #231f20;
+}
+
+#alertbox_footer.alertbox-black #alertbox_close #alertbox_close_x {
+	color: #fff;
+}
+
+#alertbox_footer div.container {padding: 1%; line-height: 0px;}
+#alertbox_footer div {vertical-align: top;}
+
+#alertbox_footer #alertbox_date {
+	display: inline-block; 
+	width: 15%; 
+	font-size: 14px;
+	font-weight: 500; 
+}
+#alertbox_footer #alertbox_close {display: inline-block; width: 12%; float: right;}
+#alertbox_footer #alertbox_close #alertbox_close_x {float: right; font-weight: bold; font-size: larger; cursor: pointer; margin-right: -10px;}
+#alertbox_footer #alertbox_msg {display: inline-block; text-align: center; width: 70%; margin: 0px 1%; height: auto; overflow: visible; font-weight: bold; margin-left: 15%;}
+
+#alertbox_footer div.clear {clear: both;}
+
+#alertbox_footer #alertbox_msg div.jspVerticalBar {display: none;}
+
+#alertbox_footer p {margin-bottom: 0px;}
+
+@media all and (max-width: 640px){
+	#alertbox_footer {height: 380px;}
+	#alertbox_footer #alertbox_date {width: 90%;}
+	#alertbox_footer #alertbox_close {width: 5%;}
+	#alertbox_footer #alertbox_msg {display: block; width: 100%; margin: 2% 0px 0px 0px; height: 300px; overflow: auto; text-align: left; margin-top: 0;}
+	#alertbox_footer div.container {padding: 3%; padding-top: 10px !important;}
+	#alertbox_footer .jspContainer { overflow: visible; }
+}
+
+#alertbox_footer #alertbox_date {display: none;}
+
+#alertbox_footer div.container { padding-top: 15px !important; padding-bottom: 20px !important; }
+
+#alertbox_footer.alertbox-red{
+    background-color: #ed1c24 !important;
+}
+#alertbox_footer.alertbox-yellow{
+    background-color: #d7c627 !important;
+}
+
